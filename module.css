@@ -529,12 +529,7 @@ button.lunio-ccf-restart,
 }
 
 @media (max-width: 700px) {
-  .lunio-ccf-wrapper {
-    width: calc(100% - 32px) !important;
-    max-width: calc(100% - 32px);
-    margin: 16px auto !important;
-    border-radius: 20px;
-  }
+  .lunio-ccf-wrapper { margin: 16px !important; border-radius: 20px; }
   .lunio-ccf-header { padding: 12px 20px !important; gap: 16px !important; min-height: 56px; }
   .lunio-ccf-brand-logo { height: 20px !important; max-width: calc(100vw - 116px); }
   .lunio-ccf-brand-icon { width: 28px !important; height: 28px !important; flex-basis: 28px; }
