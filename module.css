@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+@font-face {
+  font-family: 'Attila Sans Classic';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://143148669.fs1.hubspotusercontent-eu1.net/hubfs/143148669/AttilaSansClassic-Black.otf) format('woff2');
+}
+
+.lunio-ccf-wrapper,
+.lunio-ccf-wrapper * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.lunio-ccf-wrapper {
+  --lunio-ccf-dark-purple-1: #1D072D;
+  --lunio-ccf-dark-teal-1: #002A29;
+  --lunio-ccf-dark-teal-2: #00535C;
+  --lunio-ccf-core-teal: #0FBABA;
+  --lunio-ccf-purple: #7E34D5;
+  --lunio-ccf-purple-hover: #6929b8;
+  --lunio-ccf-core-purple: #C697F2;
+  --lunio-ccf-white: #FFFFFF;
+  --lunio-ccf-font-body: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  --lunio-ccf-font-display: 'Attila Sans Classic', 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: var(--lunio-ccf-font-body) !important;
+  color: var(--lunio-ccf-white) !important;
+  text-align: left !important;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(126, 52, 213, 0.35) 0%, transparent 60%),
+    radial-gradient(ellipse 100% 80% at 100% 100%, rgba(15, 186, 186, 0.28) 0%, transparent 55%),
+    linear-gradient(180deg, #1D072D 0%, #0C1F2E 45%, #002A29 85%, #00535C 100%) !important;
+  border-radius: 24px;
+  max-width: 920px;
+  margin: 32px auto !important;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+
+.lunio-ccf-header {
+  background: #000000 !important;
+  padding: 16px 32px !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  text-align: left !important;
+  width: 100%;
+}
+.lunio-ccf-brand {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  user-select: none;
+  margin: 0 !important;
+  text-align: left !important;
+}
+.lunio-ccf-brand-logo { height: 22px; width: auto; display: block; flex-shrink: 0; }
+.lunio-ccf-header-tag {
+  font-family: var(--lunio-ccf-font-body) !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5) !important;
+  margin: 0 !important;
+}
+
+.lunio-ccf-inner { padding: 48px 48px 48px; position: relative; }
+.lunio-ccf-dots-logo {
+  position: absolute; top: 28px; right: 36px;
+  width: 48px; height: 48px;
+  pointer-events: none; z-index: 1;
+}
+
+.lunio-ccf-intro {
+  max-height: 600px; opacity: 1; overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.35s ease, margin 0.4s ease;
+}
+.lunio-ccf-intro.lunio-ccf-intro-collapsed { max-height: 0; opacity: 0; margin-bottom: 0; }
+
+.lunio-ccf-eyebrow {
+  display: inline-block;
+  color: var(--lunio-ccf-core-teal) !important;
+  font-family: var(--lunio-ccf-font-body) !important;
+  font-weight: 600; font-size: 12px; line-height: 1;
+  letter-spacing: 2px; text-transform: uppercase;
+  margin-bottom: 16px; padding: 8px 14px;
+  background: rgba(15, 186, 186, 0.12);
+  border: 1px solid rgba(15, 186, 186, 0.3);
+  border-radius: 100px;
+}
+.lunio-ccf-heading {
+  display: block;
+  font-family: var(--lunio-ccf-font-display) !important;
+  font-weight: 900 !important;
+  font-size: 44px !important;
+  line-height: 1.05 !important;
+  letter-spacing: -0.02em;
+  color: var(--lunio-ccf-white) !important;
+  margin-bottom: 16px;
+  max-width: 720px;
+}
+.lunio-ccf-heading-accent { color: var(--lunio-ccf-core-teal) !important; }
+.lunio-ccf-subheading {
+  font-family: var(--lunio-ccf-font-body) !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 26px !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+  margin-bottom: 40px;
+  max-width: 640px;
+}
+
+.lunio-ccf-progress { display: flex !important; gap: 8px; margin-bottom: 32px; }
+.lunio-ccf-progress-segment {
+  flex: 1; height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px; overflow: hidden; position: relative;
+  transition: background 0.3s ease;
+}
+.lunio-ccf-progress-segment.lunio-ccf-active {
+  background: var(--lunio-ccf-core-teal);
+  box-shadow: 0 0 12px rgba(15, 186, 186, 0.5);
+}
+.lunio-ccf-progress-segment.lunio-ccf-completed { background: var(--lunio-ccf-core-teal); }
+
+.lunio-ccf-step-label {
+  font-family: var(--lunio-ccf-font-body) !important;
+  font-size: 12px;
+  color: var(--lunio-ccf-core-teal) !important;
+  letter-spacing: 2px; text-transform: uppercase;
+  margin-bottom: 12px; font-weight: 600 !important;
+}
+
+.lunio-ccf-step { display: none; animation: lunio-ccf-fadeIn 0.4s ease-out; }
+.lunio-ccf-step.lunio-ccf-step-active { display: block; }
+@keyframes lunio-ccf-fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.lunio-ccf-question {
+  font-family: var(--lunio-ccf-font-display) !important;
+  font-weight: 900 !important;
+  font-size: 28px !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.01em;
+  color: var(--lunio-ccf-white) !important;
+  margin-bottom: 28px;
+}
+
+.lunio-ccf-field-group { margin-bottom: 28px; }
+.lunio-ccf-label {
+  display: block !important;
+  font-family: var(--lunio-ccf-font-body) !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  margin-bottom: 12px;
+}
+.lunio-ccf-input-wrap { position: relative; display: flex; align-items: center; }
+.lunio-ccf-currency-symbol {
+  position: absolute; left: 22px;
+  color: var(--lunio-ccf-core-teal) !important;
+  font-family: var(--lunio-ccf-font-body) !important;
+  font-weight: 700 !important;
+  font-size: 18px !important;
+  pointer-events: none; z-index: 2;
+  line-height: 1 !important;
+}
+input.lunio-ccf-input,
+.lunio-ccf-wrapper input.lunio-ccf-input {
+  width: 100% !important;
+  background: rgba(0, 0, 0, 0.25) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.16) !important;
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  padding: 18px 20px 18px 52px !important;
+  border-radius: 12px !important;
+  transition: all 0.2s ease;
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: textfield !important;
+  appearance: none !important;
+  height: auto !important;
+  line-height: 1.4 !important;
+  text-align: left !important;
+}
+.lunio-ccf-input::placeholder {
+  color: rgba(255, 255, 255, 0.35) !important;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.35) !important;
+  opacity: 1 !important;
+}
+.lunio-ccf-input:focus {
+  border-color: var(--lunio-ccf-core-teal) !important;
+  background: rgba(15, 186, 186, 0.08) !important;
+  box-shadow: 0 0 0 4px rgba(15, 186, 186, 0.15) !important;
+}
+.lunio-ccf-input::-webkit-outer-spin-button,
+.lunio-ccf-input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+
+.lunio-ccf-platform-grid { display: grid !important; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.lunio-ccf-industry-grid { display: grid !important; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+button.lunio-ccf-card,
+.lunio-ccf-wrapper button.lunio-ccf-card {
+  background: rgba(0, 0, 0, 0.22) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.14) !important;
+  color: var(--lunio-ccf-white) !important;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  padding: 16px 12px !important;
+  border-radius: 14px !important;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center !important;
+  position: relative;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 4px;
+  min-height: 82px;
+  line-height: 1.3;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  box-shadow: none !important;
+  width: 100%;
+}
+.lunio-ccf-platform-grid button.lunio-ccf-card { font-size: 15px !important; min-height: 72px !important; }
+.lunio-ccf-card:hover {
+  border-color: rgba(15, 186, 186, 0.7) !important;
+  background: rgba(15, 186, 186, 0.12) !important;
+  transform: translateY(-2px);
+}
+.lunio-ccf-card.lunio-ccf-selected {
+  border-color: var(--lunio-ccf-core-teal) !important;
+  background: rgba(15, 186, 186, 0.18) !important;
+  box-shadow: 0 0 0 1px var(--lunio-ccf-core-teal), 0 8px 24px rgba(15, 186, 186, 0.2) !important;
+}
+.lunio-ccf-card.lunio-ccf-selected::after {
+  content: ''; position: absolute; top: 8px; right: 8px;
+  width: 12px; height: 12px;
+  background: var(--lunio-ccf-core-teal); border-radius: 50%;
+  box-shadow: inset 0 0 0 2.5px var(--lunio-ccf-dark-teal-1);
+}
+.lunio-ccf-card-rate {
+  font-size: 11px !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.3px;
+}
+.lunio-ccf-card.lunio-ccf-selected .lunio-ccf-card-rate { color: var(--lunio-ccf-core-teal) !important; }
+
+.lunio-ccf-nav {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin-top: 40px; gap: 16px;
+}
+button.lunio-ccf-btn,
+a.lunio-ccf-btn,
+.lunio-ccf-wrapper button.lunio-ccf-btn,
+.lunio-ccf-wrapper a.lunio-ccf-btn {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-weight: 600 !important; font-size: 16px !important; line-height: 1.4 !important;
+  padding: 16px 36px !important; border-radius: 100px !important;
+  border: none !important; cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex !important; align-items: center !important; gap: 8px !important;
+  white-space: nowrap; text-decoration: none !important;
+  -webkit-appearance: none !important; appearance: none !important;
+  text-transform: none !important; letter-spacing: 0 !important;
+}
+button.lunio-ccf-btn-primary,
+a.lunio-ccf-btn-primary,
+.lunio-ccf-wrapper button.lunio-ccf-btn-primary,
+.lunio-ccf-wrapper a.lunio-ccf-btn-primary {
+  background: #7E34D5 !important;
+  background-color: #7E34D5 !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 6px 16px rgba(126, 52, 213, 0.25), 0 2px 8px rgba(0, 0, 0, 0.35) !important;
+}
+.lunio-ccf-btn-primary:hover:not(:disabled) {
+  background: #6929B8 !important;
+  background-color: #6929B8 !important;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(126, 52, 213, 0.35), 0 4px 10px rgba(0, 0, 0, 0.4) !important;
+}
+.lunio-ccf-btn-primary:disabled { opacity: 0.35 !important; cursor: not-allowed; box-shadow: none !important; }
+.lunio-ccf-btn-ghost {
+  background: transparent !important; background-color: transparent !important;
+  color: rgba(255, 255, 255, 0.65) !important; padding: 16px 20px !important;
+}
+.lunio-ccf-btn-ghost:hover { color: #FFFFFF !important; }
+button.lunio-ccf-btn-cta,
+a.lunio-ccf-btn-cta,
+.lunio-ccf-wrapper button.lunio-ccf-btn-cta,
+.lunio-ccf-wrapper a.lunio-ccf-btn-cta {
+  background: #7E34D5 !important;
+  background-color: #7E34D5 !important;
+  color: #FFFFFF !important;
+  padding: 20px 44px !important;
+  font-size: 17px !important;
+  box-shadow: 0 6px 18px rgba(126, 52, 213, 0.22), 0 2px 8px rgba(0, 0, 0, 0.35) !important;
+}
+.lunio-ccf-btn-cta:hover {
+  background: #6929B8 !important;
+  background-color: #6929B8 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(126, 52, 213, 0.3), 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+}
+
+.lunio-ccf-context-bar {
+  display: inline-flex !important; align-items: center !important;
+  gap: 10px; padding: 10px 18px;
+  background: rgba(15, 186, 186, 0.08);
+  border: 1px solid rgba(15, 186, 186, 0.25);
+  border-radius: 100px; margin-bottom: 28px;
+  font-family: var(--lunio-ccf-font-body) !important;
+  font-size: 13px !important; font-weight: 500 !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  flex-wrap: wrap;
+}
+.lunio-ccf-context-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--lunio-ccf-core-teal);
+  box-shadow: 0 0 8px rgba(15, 186, 186, 0.6);
+  flex-shrink: 0;
+}
+.lunio-ccf-context-bar span:not(.lunio-ccf-context-dot) { color: rgba(255, 255, 255, 0.9) !important; }
+.lunio-ccf-context-divider { color: rgba(255, 255, 255, 0.3) !important; }
+
+.lunio-ccf-hero { margin-bottom: 36px; }
+.lunio-ccf-hero-eyebrow {
+  display: block;
+  font-family: var(--lunio-ccf-font-body) !important;
+  font-size: 18px !important; font-weight: 500 !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+  margin-bottom: 12px;
+}
+.lunio-ccf-hero-number {
+  display: block;
+  font-family: var(--lunio-ccf-font-display) !important;
+  font-weight: 900 !important;
+  font-size: 88px !important;
+  line-height: 1 !important;
+  letter-spacing: -0.04em;
+  color: var(--lunio-ccf-core-teal) !important;
+  margin-bottom: 20px;
+  text-shadow: 0 0 60px rgba(15, 186, 186, 0.25);
+}
+.lunio-ccf-hero-text {
+  font-family: var(--lunio-ccf-font-body) !important;
+  font-size: 18px !important; line-height: 30px !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  max-width: 720px; font-weight: 400 !important;
+}
+.lunio-ccf-hero-text strong { color: #FFFFFF !important; font-weight: 700 !important; }
+
+.lunio-ccf-secondary-stats {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px; margin-bottom: 40px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+.lunio-ccf-stat { padding: 4px 0; }
+.lunio-ccf-stat-label {
+  font-family: var(--lunio-ccf-font-body) !important;
+  font-size: 12px !important;
+  text-transform: uppercase; letter-spacing: 1.2px;
+  color: rgba(255, 255, 255, 0.55) !important;
+  font-weight: 500 !important; margin-bottom: 8px;
+}
+.lunio-ccf-stat-value {
+  font-family: var(--lunio-ccf-font-display) !important;
+  font-weight: 900 !important;
+  font-size: 28px !important; line-height: 1.1 !important;
+  letter-spacing: -0.02em;
+  color: #FFFFFF !important;
+}
+
+.lunio-ccf-cta-block {
+  background:
+    radial-gradient(circle at 0% 100%, rgba(126, 52, 213, 0.28) 0%, transparent 55%),
+    radial-gradient(circle at 100% 0%, rgba(15, 186, 186, 0.18) 0%, transparent 55%),
+    rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px; padding: 40px 36px;
+  position: relative; overflow: hidden;
+}
+.lunio-ccf-cta-headline {
+  display: block;
+  font-family: var(--lunio-ccf-font-display) !important;
+  font-weight: 900 !important;
+  font-size: 30px !important; line-height: 1.15 !important;
+  letter-spacing: -0.02em;
+  color: #FFFFFF !important; margin-bottom: 14px;
+}
+.lunio-ccf-cta-accent { color: var(--lunio-ccf-core-teal) !important; }
+.lunio-ccf-cta-text {
+  color: rgba(255, 255, 255, 0.75) !important;
+  font-family: var(--lunio-ccf-font-body) !important;
+  font-size: 15px !important; line-height: 26px !important;
+  margin-bottom: 24px; max-width: 560px;
+}
+
+.lunio-ccf-checklist {
+  display: flex !important; flex-wrap: wrap;
+  gap: 16px 28px; margin-bottom: 28px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.lunio-ccf-check-item {
+  display: inline-flex !important; align-items: center !important; gap: 8px;
+  font-family: var(--lunio-ccf-font-body) !important;
+  font-size: 14px !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-weight: 500 !important;
+}
+.lunio-ccf-check-icon {
+  width: 18px; height: 18px; border-radius: 50%;
+  background: rgba(15, 186, 186, 0.18);
+  color: var(--lunio-ccf-core-teal) !important;
+  display: inline-flex !important; align-items: center !important; justify-content: center !important;
+  font-size: 11px !important; font-weight: 700 !important;
+  flex-shrink: 0;
+}
+
+.lunio-ccf-cta-actions {
+  display: flex !important; flex-direction: column !important;
+  align-items: flex-start !important; gap: 18px;
+}
+.lunio-ccf-reassurance-list { display: flex !important; flex-wrap: wrap; gap: 10px 22px; }
+.lunio-ccf-reassurance-item {
+  display: inline-flex !important; align-items: center !important; gap: 7px;
+  font-family: var(--lunio-ccf-font-body) !important;
+  font-size: 13px !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+  font-weight: 500 !important;
+}
+.lunio-ccf-reassurance-icon {
+  width: 14px; height: 14px;
+  color: var(--lunio-ccf-core-teal) !important;
+  flex-shrink: 0; opacity: 0.85;
+}
+
+.lunio-ccf-social-proof {
+  display: flex !important; align-items: flex-start !important;
+  gap: 12px; margin-top: 28px; padding: 20px 24px;
+  background: rgba(255, 255, 255, 0.025);
+  border-radius: 14px;
+  font-family: var(--lunio-ccf-font-body) !important;
+  font-size: 14px !important; line-height: 22px !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+.lunio-ccf-social-arrow {
+  color: var(--lunio-ccf-core-teal) !important;
+  font-weight: 700 !important;
+  flex-shrink: 0; margin-top: 1px;
+}
+.lunio-ccf-social-proof strong { color: var(--lunio-ccf-core-teal) !important; font-weight: 600 !important; }
+
+button.lunio-ccf-restart,
+.lunio-ccf-wrapper button.lunio-ccf-restart {
+  display: block !important;
+  margin: 24px auto 0 !important;
+  background: none !important; background-color: transparent !important;
+  border: none !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 14px !important;
+  cursor: pointer;
+  text-decoration: underline !important;
+  text-underline-offset: 4px;
+  transition: color 0.2s;
+  padding: 0 !important; box-shadow: none !important;
+  -webkit-appearance: none !important; appearance: none !important;
+}
+.lunio-ccf-restart:hover { color: var(--lunio-ccf-core-teal) !important; }
+
+.lunio-ccf-disclaimer {
+  font-family: var(--lunio-ccf-font-body) !important;
+  font-size: 11px !important; line-height: 18px !important;
+  color: rgba(255, 255, 255, 0.35) !important;
+  margin-top: 24px; text-align: center !important;
+}
+
+@media (max-width: 700px) {
+  .lunio-ccf-wrapper { margin: 16px !important; border-radius: 20px; }
+  .lunio-ccf-header { padding: 12px 20px !important; }
+  .lunio-ccf-header-tag { display: none !important; }
+  .lunio-ccf-inner { padding: 28px 20px 32px; }
+  .lunio-ccf-dots-logo { top: 18px; right: 20px; width: 34px; height: 34px; }
+  .lunio-ccf-heading { font-size: 28px !important; }
+  .lunio-ccf-subheading { font-size: 15px !important; line-height: 24px !important; }
+  .lunio-ccf-question { font-size: 22px !important; }
+  .lunio-ccf-platform-grid { grid-template-columns: repeat(2, 1fr); }
+  .lunio-ccf-industry-grid { grid-template-columns: repeat(2, 1fr); }
+  .lunio-ccf-hero-number { font-size: 56px !important; }
+  .lunio-ccf-hero-text { font-size: 16px !important; line-height: 26px !important; }
+  .lunio-ccf-secondary-stats { grid-template-columns: 1fr; gap: 16px; }
+  .lunio-ccf-stat-value { font-size: 24px !important; }
+  .lunio-ccf-cta-block { padding: 28px 22px; }
+  .lunio-ccf-cta-headline { font-size: 24px !important; }
+  .lunio-ccf-checklist { flex-direction: column; gap: 12px; }
+  .lunio-ccf-cta-actions { gap: 16px; }
+  .lunio-ccf-btn-cta { width: 100% !important; justify-content: center !important; }
+  .lunio-ccf-reassurance-list { width: 100%; justify-content: flex-start; gap: 8px 18px; }
+  .lunio-ccf-nav { flex-direction: column-reverse !important; gap: 8px; }
+  .lunio-ccf-nav .lunio-ccf-btn { width: 100% !important; justify-content: center !important; }
+}
