@@ -345,9 +345,14 @@ a.lunio-ccf-btn-cta,
   font-size: 17px !important;
   box-shadow: 0 6px 18px rgba(126, 52, 213, 0.22), 0 2px 8px rgba(0, 0, 0, 0.35) !important;
 }
-.lunio-ccf-btn-cta:hover {
+button.lunio-ccf-btn-cta:hover,
+a.lunio-ccf-btn-cta:hover,
+.lunio-ccf-wrapper button.lunio-ccf-btn-cta:hover,
+.lunio-ccf-wrapper a.lunio-ccf-btn-cta:hover {
   background: #6929B8 !important;
   background-color: #6929B8 !important;
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
   transform: translateY(-2px);
   box-shadow: 0 10px 24px rgba(126, 52, 213, 0.3), 0 4px 12px rgba(0, 0, 0, 0.4) !important;
 }
