@@ -1,0 +1,241 @@
+<div class="lunio-ccf-wrapper" id="lunio-ccf-calculator">
+
+  <!-- LUNIO BRANDED HEADER -->
+  <div class="lunio-ccf-header">
+    <img
+      class="lunio-ccf-brand-logo"
+      src="https://143148669.fs1.hubspotusercontent-eu1.net/hubfs/143148669/Lunio%202025/Logos/Secondary_Logo.svg"
+      alt="Lunio"
+    />
+    <img
+      class="lunio-ccf-brand-icon"
+      src="https://143148669.fs1.hubspotusercontent-eu1.net/hubfs/143148669/Lunio%202025/Logos/Secondary_Icon_Logo.svg"
+      alt="Lunio Icon"
+    />
+    <span class="lunio-ccf-header-tag">Free Calculator</span>
+  </div>
+
+  <!-- Rest des Codes bleibt unverändert -->
+  <div class="lunio-ccf-inner">
+    <!-- INTRO (collapses on Step 2+) -->
+    <div class="lunio-ccf-intro" id="lunio-ccf-intro">
+      <span class="lunio-ccf-eyebrow">Click Fraud Calculator</span>
+      <span class="lunio-ccf-heading">Click fraud takes 7–15% of every ad budget. <span class="lunio-ccf-heading-accent">Find out yours.</span></span>
+      <p class="lunio-ccf-subheading">60 seconds, no signup. Built on Lunio's analysis of 2.7B+ ad clicks. Find out your industry's invalid traffic rate, your wasted spend, and the revenue you could recover.</p>
+    </div>
+
+    <!-- PROGRESS -->
+    <div class="lunio-ccf-progress">
+      <div class="lunio-ccf-progress-segment lunio-ccf-active" data-segment="1"></div>
+      <div class="lunio-ccf-progress-segment" data-segment="2"></div>
+      <div class="lunio-ccf-progress-segment" data-segment="3"></div>
+    </div>
+    <!-- ============= STEP 1 ============= -->
+    <div class="lunio-ccf-step lunio-ccf-step-active" data-step="1">
+      <div class="lunio-ccf-step-label">Step 1 of 3</div>
+      <div class="lunio-ccf-question">Start with the basics.</div>
+
+      <div class="lunio-ccf-field-group">
+        <label class="lunio-ccf-label" for="lunio-ccf-budget">Monthly ad spend</label>
+        <div class="lunio-ccf-input-wrap">
+          <span class="lunio-ccf-currency-symbol">$</span>
+          <input type="number" id="lunio-ccf-budget" class="lunio-ccf-input" placeholder="50,000" min="0" step="1000" />
+        </div>
+      </div>
+
+      <div class="lunio-ccf-field-group">
+        <label class="lunio-ccf-label">Primary ad platform</label>
+        <div class="lunio-ccf-platform-grid" id="lunio-ccf-platform-grid">
+          <button class="lunio-ccf-card" data-platform="Google" data-cta-name="Google" data-context-name="Google Ads" data-rate="7.57" type="button">Google</button>
+          <button class="lunio-ccf-card" data-platform="Meta" data-cta-name="Meta" data-context-name="Meta Ads" data-rate="8.20" type="button">Meta</button>
+          <button class="lunio-ccf-card" data-platform="Microsoft Ads" data-cta-name="Microsoft" data-context-name="Microsoft Ads" data-rate="10.32" type="button">Microsoft Ads</button>
+          <button class="lunio-ccf-card" data-platform="X / Twitter" data-cta-name="X" data-context-name="X Ads" data-rate="12.79" type="button">X / Twitter</button>
+          <button class="lunio-ccf-card" data-platform="LinkedIn" data-cta-name="LinkedIn" data-context-name="LinkedIn Ads" data-rate="19.88" type="button">LinkedIn</button>
+          <button class="lunio-ccf-card" data-platform="TikTok" data-cta-name="TikTok" data-context-name="TikTok Ads" data-rate="24.20" type="button">TikTok</button>
+        </div>
+      </div>
+
+      <div class="lunio-ccf-nav">
+        <div></div>
+        <button class="lunio-ccf-btn lunio-ccf-btn-primary" id="lunio-ccf-next-1" type="button" disabled>Continue →</button>
+      </div>
+    </div>
+
+    <!-- ============= STEP 2 ============= -->
+    <div class="lunio-ccf-step" data-step="2">
+      <div class="lunio-ccf-step-label">Step 2 of 3</div>
+      <div class="lunio-ccf-question">Pick your industry &amp; CPC.</div>
+
+      <div class="lunio-ccf-field-group">
+        <label class="lunio-ccf-label">Your industry</label>
+        <div class="lunio-ccf-industry-grid" id="lunio-ccf-industry-grid">
+          <!-- Row 1 (lowest IVT) -->
+          <button class="lunio-ccf-card" data-industry="Retail" data-rate="6.03" data-cpc="1.35" type="button">
+            <span>Retail</span><span class="lunio-ccf-card-rate">6.03% IVT</span>
+          </button>
+          <button class="lunio-ccf-card" data-industry="Software &amp; IT" data-rate="6.48" data-cpc="4.50" type="button">
+            <span>Software &amp; IT</span><span class="lunio-ccf-card-rate">6.48% IVT</span>
+          </button>
+          <button class="lunio-ccf-card" data-industry="Cybersecurity" data-rate="7.90" data-cpc="5.80" type="button">
+            <span>Cybersecurity</span><span class="lunio-ccf-card-rate">7.90% IVT</span>
+          </button>
+          <button class="lunio-ccf-card" data-industry="B2B SaaS" data-rate="8.20" data-cpc="4.80" type="button">
+            <span>B2B SaaS</span><span class="lunio-ccf-card-rate">8.20% IVT</span>
+          </button>
+
+          <!-- Row 2 -->
+          <button class="lunio-ccf-card" data-industry="Luxury Retail" data-rate="8.60" data-cpc="1.85" type="button">
+            <span>Luxury Retail</span><span class="lunio-ccf-card-rate">8.60% IVT</span>
+          </button>
+          <button class="lunio-ccf-card" data-industry="Travel" data-rate="9.04" data-cpc="1.55" type="button">
+            <span>Travel</span><span class="lunio-ccf-card-rate">9.04% IVT</span>
+          </button>
+          <button class="lunio-ccf-card" data-industry="Finance &amp; Insurance" data-rate="10.12" data-cpc="3.77" type="button">
+            <span>Finance &amp; Insurance</span><span class="lunio-ccf-card-rate">10.12% IVT</span>
+          </button>
+          <button class="lunio-ccf-card" data-industry="Healthcare &amp; Pharma" data-rate="10.80" data-cpc="3.40" type="button">
+            <span>Healthcare &amp; Pharma</span><span class="lunio-ccf-card-rate">10.80% IVT</span>
+          </button>
+
+          <!-- Row 3 -->
+          <button class="lunio-ccf-card" data-industry="Automotive" data-rate="11.20" data-cpc="2.80" type="button">
+            <span>Automotive</span><span class="lunio-ccf-card-rate">11.20% IVT</span>
+          </button>
+          <button class="lunio-ccf-card" data-industry="Legal Services" data-rate="11.40" data-cpc="6.75" type="button">
+            <span>Legal Services</span><span class="lunio-ccf-card-rate">11.40% IVT</span>
+          </button>
+          <button class="lunio-ccf-card" data-industry="Home Services" data-rate="12.80" data-cpc="6.40" type="button">
+            <span>Home Services</span><span class="lunio-ccf-card-rate">12.80% IVT</span>
+          </button>
+          <button class="lunio-ccf-card" data-industry="Recruitment &amp; HR" data-rate="13.20" data-cpc="4.20" type="button">
+            <span>Recruitment &amp; HR</span><span class="lunio-ccf-card-rate">13.20% IVT</span>
+          </button>
+
+          <!-- Row 4 (highest IVT) -->
+          <button class="lunio-ccf-card" data-industry="Real Estate" data-rate="13.61" data-cpc="2.37" type="button">
+            <span>Real Estate</span><span class="lunio-ccf-card-rate">13.61% IVT</span>
+          </button>
+          <button class="lunio-ccf-card" data-industry="Telecoms &amp; Utilities" data-rate="14.26" data-cpc="3.50" type="button">
+            <span>Telecoms &amp; Utilities</span><span class="lunio-ccf-card-rate">14.26% IVT</span>
+          </button>
+          <button class="lunio-ccf-card" data-industry="Education" data-rate="14.41" data-cpc="2.40" type="button">
+            <span>Education</span><span class="lunio-ccf-card-rate">14.41% IVT</span>
+          </button>
+          <button class="lunio-ccf-card" data-industry="Gaming &amp; iGaming" data-rate="18.49" data-cpc="1.50" type="button">
+            <span>Gaming &amp; iGaming</span><span class="lunio-ccf-card-rate">18.49% IVT</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="lunio-ccf-field-group">
+        <label class="lunio-ccf-label" for="lunio-ccf-cpc">Your average CPC (we'll pre-fill an industry estimate)</label>
+        <div class="lunio-ccf-input-wrap">
+          <span class="lunio-ccf-currency-symbol">$</span>
+          <input type="number" id="lunio-ccf-cpc" class="lunio-ccf-input" placeholder="2.50" min="0.01" step="0.01" />
+        </div>
+      </div>
+
+      <div class="lunio-ccf-nav">
+        <button class="lunio-ccf-btn lunio-ccf-btn-ghost" id="lunio-ccf-back-2" type="button">← Back</button>
+        <button class="lunio-ccf-btn lunio-ccf-btn-primary" id="lunio-ccf-next-2" type="button" disabled>See my results →</button>
+      </div>
+    </div>
+
+    <!-- ============= STEP 3 (redesigned) ============= -->
+    <div class="lunio-ccf-step" data-step="3">
+
+      <!-- Dynamic context bar -->
+      <div class="lunio-ccf-context-bar">
+        <span class="lunio-ccf-context-dot"></span>
+        <span id="lunio-ccf-ctx-industry">Industry</span>
+        <span class="lunio-ccf-context-divider">·</span>
+        <span id="lunio-ccf-ctx-platform">Platform</span>
+        <span class="lunio-ccf-context-divider">·</span>
+        <span id="lunio-ccf-ctx-spend">$0</span><span>&nbsp;annual spend</span>
+      </div>
+
+      <!-- HERO: Lost revenue is the headline number -->
+      <div class="lunio-ccf-hero">
+        <span class="lunio-ccf-hero-eyebrow">Click fraud is taking</span>
+        <span class="lunio-ccf-hero-number" id="lunio-ccf-hero-loss">$0</span>
+        <p class="lunio-ccf-hero-text">
+          from your business every year. That's <strong id="lunio-ccf-monthly-loss">$0 every month</strong> walking out the door — and another <strong id="lunio-ccf-daily-loss">$0 every day</strong> you don't act.
+        </p>
+      </div>
+
+      <!-- Secondary stats -->
+      <div class="lunio-ccf-secondary-stats">
+        <div class="lunio-ccf-stat">
+          <div class="lunio-ccf-stat-label">Invalid clicks / yr</div>
+          <div class="lunio-ccf-stat-value" id="lunio-ccf-stat-clicks">0</div>
+        </div>
+        <div class="lunio-ccf-stat">
+          <div class="lunio-ccf-stat-label">Wasted ad spend</div>
+          <div class="lunio-ccf-stat-value" id="lunio-ccf-stat-spend">$0</div>
+        </div>
+        <div class="lunio-ccf-stat">
+          <div class="lunio-ccf-stat-label">Invalid traffic</div>
+          <div class="lunio-ccf-stat-value" id="lunio-ccf-stat-ivt">0%</div>
+        </div>
+      </div>
+
+      <!-- CTA Block -->
+      <div class="lunio-ccf-cta-block">
+        <span class="lunio-ccf-cta-headline">
+          <span id="lunio-ccf-cta-platform">Google</span> won't fix this. <span class="lunio-ccf-cta-accent">Lunio will.</span>
+        </span>
+        <p class="lunio-ccf-cta-text">
+          Run a free 14-day audit on your live account and see your real numbers — broken down by campaign, keyword, geo and domain.
+        </p>
+
+        <div class="lunio-ccf-checklist">
+          <span class="lunio-ccf-check-item"><span class="lunio-ccf-check-icon">✓</span>Your actual IVT rate</span>
+          <span class="lunio-ccf-check-item"><span class="lunio-ccf-check-icon">✓</span>Top wasted-spend sources</span>
+          <span class="lunio-ccf-check-item"><span class="lunio-ccf-check-icon">✓</span>Recoverable revenue</span>
+        </div>
+
+        <div class="lunio-ccf-cta-actions">
+          <a href="https://www.lunio.ai/talk-to-sales" class="lunio-ccf-btn lunio-ccf-btn-cta" id="lunio-ccf-cta-audit" target="_blank" rel="noopener">
+            Start my free audit →
+          </a>
+          <div class="lunio-ccf-reassurance-list">
+            <span class="lunio-ccf-reassurance-item">
+              <svg class="lunio-ccf-reassurance-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="5" width="20" height="14" rx="2"/>
+                <line x1="2" y1="10" x2="22" y2="10"/>
+              </svg>
+              No credit card
+            </span>
+            <span class="lunio-ccf-reassurance-item">
+              <svg class="lunio-ccf-reassurance-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+              5-min setup
+            </span>
+            <span class="lunio-ccf-reassurance-item">
+              <svg class="lunio-ccf-reassurance-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+              Read-only access
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social proof -->
+      <div class="lunio-ccf-social-proof">
+        <span class="lunio-ccf-social-arrow">↗</span>
+        <span>After activation, Lunio customers see avg <strong>13% higher on-page CVR</strong> and <strong>7% lower CPL</strong>. Trusted by 1,400+ brands · 4.7 on G2.</span>
+      </div>
+
+      <button class="lunio-ccf-restart" id="lunio-ccf-restart" type="button">Recalculate with different inputs</button>
+
+      <p class="lunio-ccf-disclaimer">
+        Calculations based on Lunio's Global Invalid Traffic Report 2026. Eight industries shown use Lunio-measured rates; additional industries use Lunio-methodology estimates calibrated against comparable verticals. Lost revenue applies Lunio's conservative 3:1 ROAS baseline — every $1 of wasted ad spend equals roughly $3 in missed revenue. Actual results vary by account.
+      </p>
+    </div>
+
+  </div>
+</div>
