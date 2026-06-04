@@ -403,8 +403,8 @@ a.lunio-ccf-btn-cta:hover,
   display: block;
   font-family: var(--lunio-ccf-font-display) !important;
   font-weight: 900 !important;
-  font-size: 88px !important;
-  line-height: 1 !important;
+  font-size: 72px !important;
+  line-height: 0.98 !important;
   letter-spacing: -0.04em;
   color: var(--lunio-ccf-core-teal) !important;
   margin-bottom: 20px;
@@ -566,7 +566,7 @@ button.lunio-ccf-restart,
   .lunio-ccf-question { font-size: 19px !important; margin-bottom: 12px; }
   .lunio-ccf-platform-grid { grid-template-columns: repeat(2, 1fr); }
   .lunio-ccf-industry-grid { grid-template-columns: repeat(4, 1fr); }
-  .lunio-ccf-hero-number { font-size: 56px !important; }
+  .lunio-ccf-hero-number { font-size: 44px !important; }
   .lunio-ccf-hero-text { font-size: 16px !important; line-height: 26px !important; }
   .lunio-ccf-secondary-stats { grid-template-columns: 1fr; gap: 16px; }
   .lunio-ccf-stat-value { font-size: 24px !important; }
