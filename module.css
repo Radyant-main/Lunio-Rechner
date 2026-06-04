@@ -33,9 +33,9 @@
     radial-gradient(ellipse 80% 60% at 50% -10%, rgba(126, 52, 213, 0.35) 0%, transparent 60%),
     radial-gradient(ellipse 100% 80% at 100% 100%, rgba(15, 186, 186, 0.28) 0%, transparent 55%),
     linear-gradient(180deg, #1D072D 0%, #0C1F2E 45%, #002A29 85%, #00535C 100%) !important;
-  border-radius: 24px;
-  max-width: 920px;
-  margin: 32px auto !important;
+  border-radius: 20px;
+  max-width: 820px;
+  margin: 24px auto !important;
   position: relative;
   overflow: hidden;
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.4);
@@ -44,7 +44,7 @@
 
 .lunio-ccf-header {
   background: #000000 !important;
-  padding: 16px 32px !important;
+  padding: 14px 28px !important;
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
@@ -99,7 +99,7 @@
   white-space: nowrap;
 }
 
-.lunio-ccf-inner { padding: 48px 48px 48px; position: relative; }
+.lunio-ccf-inner { padding: 36px 40px 40px; position: relative; }
 .lunio-ccf-dots-logo {
   position: absolute; top: 28px; right: 36px;
   width: 48px; height: 48px;
@@ -118,7 +118,7 @@
   font-family: var(--lunio-ccf-font-body) !important;
   font-weight: 600; font-size: 12px; line-height: 1;
   letter-spacing: 2px; text-transform: uppercase;
-  margin-bottom: 16px; padding: 8px 14px;
+  margin-bottom: 12px; padding: 6px 12px;
   background: rgba(15, 186, 186, 0.12);
   border: 1px solid rgba(15, 186, 186, 0.3);
   border-radius: 100px;
@@ -127,25 +127,25 @@
   display: block;
   font-family: var(--lunio-ccf-font-display) !important;
   font-weight: 900 !important;
-  font-size: 44px !important;
+  font-size: 38px !important;
   line-height: 1.05 !important;
   letter-spacing: -0.02em;
   color: var(--lunio-ccf-white) !important;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   max-width: 720px;
 }
 .lunio-ccf-heading-accent { color: var(--lunio-ccf-core-teal) !important; }
 .lunio-ccf-subheading {
   font-family: var(--lunio-ccf-font-body) !important;
   font-weight: 500 !important;
-  font-size: 16px !important;
-  line-height: 26px !important;
+  font-size: 15px !important;
+  line-height: 24px !important;
   color: rgba(255, 255, 255, 0.7) !important;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
   max-width: 640px;
 }
 
-.lunio-ccf-progress { display: flex !important; gap: 8px; margin-bottom: 32px; }
+.lunio-ccf-progress { display: flex !important; gap: 8px; margin-bottom: 24px; }
 .lunio-ccf-progress-segment {
   flex: 1; height: 4px;
   background: rgba(255, 255, 255, 0.1);
@@ -163,7 +163,7 @@
   font-size: 12px;
   color: var(--lunio-ccf-core-teal) !important;
   letter-spacing: 2px; text-transform: uppercase;
-  margin-bottom: 12px; font-weight: 600 !important;
+  margin-bottom: 8px; font-weight: 600 !important;
 }
 
 .lunio-ccf-step { display: none; animation: lunio-ccf-fadeIn 0.4s ease-out; }
@@ -176,29 +176,29 @@
 .lunio-ccf-question {
   font-family: var(--lunio-ccf-font-display) !important;
   font-weight: 900 !important;
-  font-size: 28px !important;
-  line-height: 1.2 !important;
+  font-size: 24px !important;
+  line-height: 1.15 !important;
   letter-spacing: -0.01em;
   color: var(--lunio-ccf-white) !important;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 
-.lunio-ccf-field-group { margin-bottom: 28px; }
+.lunio-ccf-field-group { margin-bottom: 20px; }
 .lunio-ccf-label {
   display: block !important;
   font-family: var(--lunio-ccf-font-body) !important;
-  font-size: 14px !important;
+  font-size: 13px !important;
   font-weight: 500 !important;
   color: rgba(255, 255, 255, 0.85) !important;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 .lunio-ccf-input-wrap { position: relative; display: flex; align-items: center; }
 .lunio-ccf-currency-symbol {
-  position: absolute; left: 22px;
+  position: absolute; left: 18px;
   color: var(--lunio-ccf-core-teal) !important;
   font-family: var(--lunio-ccf-font-body) !important;
   font-weight: 700 !important;
-  font-size: 18px !important;
+  font-size: 16px !important;
   pointer-events: none; z-index: 2;
   line-height: 1 !important;
 }
@@ -210,9 +210,9 @@ input.lunio-ccf-input,
   color: #FFFFFF !important;
   -webkit-text-fill-color: #FFFFFF !important;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif !important;
-  font-size: 18px !important;
+  font-size: 16px !important;
   font-weight: 500 !important;
-  padding: 18px 20px 18px 52px !important;
+  padding: 13px 18px 13px 44px !important;
   border-radius: 12px !important;
   transition: all 0.2s ease;
   outline: none !important;
@@ -240,18 +240,18 @@ input.lunio-ccf-input,
   margin: 0 !important;
 }
 
-.lunio-ccf-platform-grid { display: grid !important; grid-template-columns: repeat(3, 1fr); gap: 12px; }
-.lunio-ccf-industry-grid { display: grid !important; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.lunio-ccf-platform-grid { display: grid !important; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.lunio-ccf-industry-grid { display: grid !important; grid-template-columns: repeat(4, 1fr); gap: 8px; }
 button.lunio-ccf-card,
 .lunio-ccf-wrapper button.lunio-ccf-card {
   background: rgba(0, 0, 0, 0.22) !important;
   border: 1.5px solid rgba(255, 255, 255, 0.14) !important;
   color: var(--lunio-ccf-white) !important;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif !important;
-  font-size: 13px !important;
+  font-size: 12px !important;
   font-weight: 600 !important;
-  padding: 16px 12px !important;
-  border-radius: 14px !important;
+  padding: 10px 8px !important;
+  border-radius: 12px !important;
   cursor: pointer;
   transition: all 0.2s ease;
   text-align: center !important;
@@ -260,15 +260,15 @@ button.lunio-ccf-card,
   flex-direction: column !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 4px;
-  min-height: 82px;
+  gap: 3px;
+  min-height: 58px;
   line-height: 1.3;
   -webkit-appearance: none !important;
   appearance: none !important;
   box-shadow: none !important;
   width: 100%;
 }
-.lunio-ccf-platform-grid button.lunio-ccf-card { font-size: 15px !important; min-height: 72px !important; }
+.lunio-ccf-platform-grid button.lunio-ccf-card { font-size: 14px !important; min-height: 56px !important; }
 .lunio-ccf-card:hover {
   border-color: rgba(15, 186, 186, 0.7) !important;
   background: rgba(15, 186, 186, 0.12) !important;
@@ -281,12 +281,12 @@ button.lunio-ccf-card,
 }
 .lunio-ccf-card.lunio-ccf-selected::after {
   content: ''; position: absolute; top: 8px; right: 8px;
-  width: 12px; height: 12px;
+  width: 10px; height: 10px;
   background: var(--lunio-ccf-core-teal); border-radius: 50%;
   box-shadow: inset 0 0 0 2.5px var(--lunio-ccf-dark-teal-1);
 }
 .lunio-ccf-card-rate {
-  font-size: 11px !important;
+  font-size: 10px !important;
   color: rgba(255, 255, 255, 0.5) !important;
   font-weight: 500 !important;
   letter-spacing: 0.3px;
@@ -297,15 +297,15 @@ button.lunio-ccf-card,
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
-  margin-top: 40px; gap: 16px;
+  margin-top: 24px; gap: 14px;
 }
 button.lunio-ccf-btn,
 a.lunio-ccf-btn,
 .lunio-ccf-wrapper button.lunio-ccf-btn,
 .lunio-ccf-wrapper a.lunio-ccf-btn {
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif !important;
-  font-weight: 600 !important; font-size: 16px !important; line-height: 1.4 !important;
-  padding: 16px 36px !important; border-radius: 100px !important;
+  font-weight: 600 !important; font-size: 15px !important; line-height: 1.35 !important;
+  padding: 13px 28px !important; border-radius: 100px !important;
   border: none !important; cursor: pointer;
   transition: all 0.2s ease;
   display: inline-flex !important; align-items: center !important; gap: 8px !important;
@@ -331,7 +331,7 @@ a.lunio-ccf-btn-primary,
 .lunio-ccf-btn-primary:disabled { opacity: 0.35 !important; cursor: not-allowed; box-shadow: none !important; }
 .lunio-ccf-btn-ghost {
   background: transparent !important; background-color: transparent !important;
-  color: rgba(255, 255, 255, 0.65) !important; padding: 16px 20px !important;
+  color: rgba(255, 255, 255, 0.65) !important; padding: 13px 18px !important;
 }
 .lunio-ccf-btn-ghost:hover { color: #FFFFFF !important; }
 button.lunio-ccf-btn-cta,
@@ -345,9 +345,14 @@ a.lunio-ccf-btn-cta,
   font-size: 17px !important;
   box-shadow: 0 6px 18px rgba(126, 52, 213, 0.22), 0 2px 8px rgba(0, 0, 0, 0.35) !important;
 }
-.lunio-ccf-btn-cta:hover {
+button.lunio-ccf-btn-cta:hover,
+a.lunio-ccf-btn-cta:hover,
+.lunio-ccf-wrapper button.lunio-ccf-btn-cta:hover,
+.lunio-ccf-wrapper a.lunio-ccf-btn-cta:hover {
   background: #6929B8 !important;
   background-color: #6929B8 !important;
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
   transform: translateY(-2px);
   box-shadow: 0 10px 24px rgba(126, 52, 213, 0.3), 0 4px 12px rgba(0, 0, 0, 0.4) !important;
 }
@@ -540,13 +545,13 @@ button.lunio-ccf-restart,
   .lunio-ccf-brand-icon { width: 28px !important; height: 28px !important; flex-basis: 28px; }
   .lunio-ccf-header-meta { gap: 0 !important; }
   .lunio-ccf-header-tag { display: none !important; }
-  .lunio-ccf-inner { padding: 28px 20px 32px; }
+  .lunio-ccf-inner { padding: 24px 18px 28px; }
   .lunio-ccf-dots-logo { top: 18px; right: 20px; width: 34px; height: 34px; }
   .lunio-ccf-heading { font-size: 28px !important; }
-  .lunio-ccf-subheading { font-size: 15px !important; line-height: 24px !important; }
-  .lunio-ccf-question { font-size: 22px !important; }
+  .lunio-ccf-subheading { font-size: 14px !important; line-height: 22px !important; }
+  .lunio-ccf-question { font-size: 20px !important; margin-bottom: 16px; }
   .lunio-ccf-platform-grid { grid-template-columns: repeat(2, 1fr); }
-  .lunio-ccf-industry-grid { grid-template-columns: repeat(2, 1fr); }
+  .lunio-ccf-industry-grid { grid-template-columns: repeat(3, 1fr); }
   .lunio-ccf-hero-number { font-size: 56px !important; }
   .lunio-ccf-hero-text { font-size: 16px !important; line-height: 26px !important; }
   .lunio-ccf-secondary-stats { grid-template-columns: 1fr; gap: 16px; }
@@ -559,4 +564,7 @@ button.lunio-ccf-restart,
   .lunio-ccf-reassurance-list { width: 100%; justify-content: flex-start; gap: 8px 18px; }
   .lunio-ccf-nav { flex-direction: column-reverse !important; gap: 8px; }
   .lunio-ccf-nav .lunio-ccf-btn { width: 100% !important; justify-content: center !important; }
+}
+@media (max-width: 480px) {
+  .lunio-ccf-industry-grid { grid-template-columns: repeat(2, 1fr); }
 }

@@ -44,14 +44,6 @@
       <div class="lunio-ccf-question">Start with the basics.</div>
 
       <div class="lunio-ccf-field-group">
-        <label class="lunio-ccf-label" for="lunio-ccf-budget">Monthly ad spend</label>
-        <div class="lunio-ccf-input-wrap">
-          <span class="lunio-ccf-currency-symbol">$</span>
-          <input type="number" id="lunio-ccf-budget" class="lunio-ccf-input" placeholder="50,000" min="0" step="1000" />
-        </div>
-      </div>
-
-      <div class="lunio-ccf-field-group">
         <label class="lunio-ccf-label">Primary ad platform</label>
         <div class="lunio-ccf-platform-grid" id="lunio-ccf-platform-grid">
           <button class="lunio-ccf-card" data-platform="Google" data-cta-name="Google" data-context-name="Google Ads" data-rate="7.57" type="button">Google</button>
@@ -60,6 +52,14 @@
           <button class="lunio-ccf-card" data-platform="X / Twitter" data-cta-name="X" data-context-name="X Ads" data-rate="12.79" type="button">X / Twitter</button>
           <button class="lunio-ccf-card" data-platform="LinkedIn" data-cta-name="LinkedIn" data-context-name="LinkedIn Ads" data-rate="19.88" type="button">LinkedIn</button>
           <button class="lunio-ccf-card" data-platform="TikTok" data-cta-name="TikTok" data-context-name="TikTok Ads" data-rate="24.20" type="button">TikTok</button>
+        </div>
+      </div>
+
+      <div class="lunio-ccf-field-group">
+        <label class="lunio-ccf-label" id="lunio-ccf-budget-label" for="lunio-ccf-budget">Monthly ad spend on this platform</label>
+        <div class="lunio-ccf-input-wrap">
+          <span class="lunio-ccf-currency-symbol">$</span>
+          <input type="number" id="lunio-ccf-budget" class="lunio-ccf-input" placeholder="50,000" min="0" step="1000" />
         </div>
       </div>
 
