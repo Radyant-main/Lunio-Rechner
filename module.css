@@ -341,8 +341,8 @@ a.lunio-ccf-btn-cta,
   background: #7E34D5 !important;
   background-color: #7E34D5 !important;
   color: #FFFFFF !important;
-  padding: 20px 44px !important;
-  font-size: 17px !important;
+  padding: 16px 34px !important;
+  font-size: 15px !important;
   box-shadow: 0 6px 18px rgba(126, 52, 213, 0.22), 0 2px 8px rgba(0, 0, 0, 0.35) !important;
 }
 button.lunio-ccf-btn-cta:hover,
@@ -373,17 +373,17 @@ a.lunio-ccf-btn-cta:hover,
 
 .lunio-ccf-context-bar {
   display: inline-flex !important; align-items: center !important;
-  gap: 10px; padding: 10px 18px;
+  gap: 8px; padding: 8px 14px;
   background: rgba(15, 186, 186, 0.08);
   border: 1px solid rgba(15, 186, 186, 0.25);
-  border-radius: 100px; margin-bottom: 28px;
+  border-radius: 100px; margin-bottom: 20px;
   font-family: var(--lunio-ccf-font-body) !important;
-  font-size: 13px !important; font-weight: 500 !important;
+  font-size: 12px !important; font-weight: 500 !important;
   color: rgba(255, 255, 255, 0.9) !important;
   flex-wrap: wrap;
 }
 .lunio-ccf-context-dot {
-  width: 8px; height: 8px; border-radius: 50%;
+  width: 7px; height: 7px; border-radius: 50%;
   background: var(--lunio-ccf-core-teal);
   box-shadow: 0 0 8px rgba(15, 186, 186, 0.6);
   flex-shrink: 0;
@@ -391,28 +391,28 @@ a.lunio-ccf-btn-cta:hover,
 .lunio-ccf-context-bar span:not(.lunio-ccf-context-dot) { color: rgba(255, 255, 255, 0.9) !important; }
 .lunio-ccf-context-divider { color: rgba(255, 255, 255, 0.3) !important; }
 
-.lunio-ccf-hero { margin-bottom: 36px; }
+.lunio-ccf-hero { margin-bottom: 26px; }
 .lunio-ccf-hero-eyebrow {
   display: block;
   font-family: var(--lunio-ccf-font-body) !important;
-  font-size: 18px !important; font-weight: 500 !important;
+  font-size: 15px !important; font-weight: 500 !important;
   color: rgba(255, 255, 255, 0.7) !important;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 .lunio-ccf-hero-number {
   display: block;
   font-family: var(--lunio-ccf-font-display) !important;
   font-weight: 900 !important;
-  font-size: 72px !important;
-  line-height: 0.98 !important;
+  font-size: 60px !important;
+  line-height: 0.96 !important;
   letter-spacing: -0.04em;
   color: var(--lunio-ccf-core-teal) !important;
-  margin-bottom: 20px;
-  text-shadow: 0 0 60px rgba(15, 186, 186, 0.25);
+  margin-bottom: 14px;
+  text-shadow: 0 0 44px rgba(15, 186, 186, 0.22);
 }
 .lunio-ccf-hero-text {
   font-family: var(--lunio-ccf-font-body) !important;
-  font-size: 18px !important; line-height: 30px !important;
+  font-size: 15px !important; line-height: 24px !important;
   color: rgba(255, 255, 255, 0.85) !important;
   max-width: 720px; font-weight: 400 !important;
 }
@@ -421,22 +421,22 @@ a.lunio-ccf-btn-cta:hover,
 .lunio-ccf-secondary-stats {
   display: grid !important;
   grid-template-columns: repeat(3, 1fr);
-  gap: 14px; margin-bottom: 40px;
-  padding-top: 32px;
+  gap: 10px; margin-bottom: 28px;
+  padding-top: 22px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 .lunio-ccf-stat { padding: 4px 0; }
 .lunio-ccf-stat-label {
   font-family: var(--lunio-ccf-font-body) !important;
-  font-size: 12px !important;
-  text-transform: uppercase; letter-spacing: 1.2px;
+  font-size: 10px !important;
+  text-transform: uppercase; letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.55) !important;
-  font-weight: 500 !important; margin-bottom: 8px;
+  font-weight: 500 !important; margin-bottom: 6px;
 }
 .lunio-ccf-stat-value {
   font-family: var(--lunio-ccf-font-display) !important;
   font-weight: 900 !important;
-  font-size: 28px !important; line-height: 1.1 !important;
+  font-size: 22px !important; line-height: 1.08 !important;
   letter-spacing: -0.02em;
   color: #FFFFFF !important;
 }
@@ -447,72 +447,72 @@ a.lunio-ccf-btn-cta:hover,
     radial-gradient(circle at 100% 0%, rgba(15, 186, 186, 0.18) 0%, transparent 55%),
     rgba(255, 255, 255, 0.03) !important;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px; padding: 40px 36px;
+  border-radius: 16px; padding: 26px 24px;
   position: relative; overflow: hidden;
 }
 .lunio-ccf-cta-headline {
   display: block;
   font-family: var(--lunio-ccf-font-display) !important;
   font-weight: 900 !important;
-  font-size: 30px !important; line-height: 1.15 !important;
+  font-size: 24px !important; line-height: 1.12 !important;
   letter-spacing: -0.02em;
-  color: #FFFFFF !important; margin-bottom: 14px;
+  color: #FFFFFF !important; margin-bottom: 10px;
 }
 .lunio-ccf-cta-accent { color: var(--lunio-ccf-core-teal) !important; }
 .lunio-ccf-cta-text {
   color: rgba(255, 255, 255, 0.75) !important;
   font-family: var(--lunio-ccf-font-body) !important;
-  font-size: 15px !important; line-height: 26px !important;
-  margin-bottom: 24px; max-width: 560px;
+  font-size: 13px !important; line-height: 22px !important;
+  margin-bottom: 18px; max-width: 540px;
 }
 
 .lunio-ccf-checklist {
   display: flex !important; flex-wrap: wrap;
-  gap: 16px 28px; margin-bottom: 28px;
-  padding-bottom: 28px;
+  gap: 10px 18px; margin-bottom: 18px;
+  padding-bottom: 18px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 .lunio-ccf-check-item {
-  display: inline-flex !important; align-items: center !important; gap: 8px;
+  display: inline-flex !important; align-items: center !important; gap: 7px;
   font-family: var(--lunio-ccf-font-body) !important;
-  font-size: 14px !important;
+  font-size: 12px !important;
   color: rgba(255, 255, 255, 0.85) !important;
   font-weight: 500 !important;
 }
 .lunio-ccf-check-icon {
-  width: 18px; height: 18px; border-radius: 50%;
+  width: 16px; height: 16px; border-radius: 50%;
   background: rgba(15, 186, 186, 0.18);
   color: var(--lunio-ccf-core-teal) !important;
   display: inline-flex !important; align-items: center !important; justify-content: center !important;
-  font-size: 11px !important; font-weight: 700 !important;
+  font-size: 10px !important; font-weight: 700 !important;
   flex-shrink: 0;
 }
 
 .lunio-ccf-cta-actions {
   display: flex !important; flex-direction: column !important;
-  align-items: flex-start !important; gap: 18px;
+  align-items: flex-start !important; gap: 14px;
 }
-.lunio-ccf-reassurance-list { display: flex !important; flex-wrap: wrap; gap: 10px 22px; }
+.lunio-ccf-reassurance-list { display: flex !important; flex-wrap: wrap; gap: 8px 16px; }
 .lunio-ccf-reassurance-item {
-  display: inline-flex !important; align-items: center !important; gap: 7px;
+  display: inline-flex !important; align-items: center !important; gap: 6px;
   font-family: var(--lunio-ccf-font-body) !important;
-  font-size: 13px !important;
+  font-size: 12px !important;
   color: rgba(255, 255, 255, 0.6) !important;
   font-weight: 500 !important;
 }
 .lunio-ccf-reassurance-icon {
-  width: 14px; height: 14px;
+  width: 12px; height: 12px;
   color: var(--lunio-ccf-core-teal) !important;
   flex-shrink: 0; opacity: 0.85;
 }
 
 .lunio-ccf-social-proof {
   display: flex !important; align-items: flex-start !important;
-  gap: 12px; margin-top: 28px; padding: 20px 24px;
+  gap: 9px; margin-top: 18px; padding: 14px 18px;
   background: rgba(255, 255, 255, 0.025);
-  border-radius: 14px;
+  border-radius: 12px;
   font-family: var(--lunio-ccf-font-body) !important;
-  font-size: 14px !important; line-height: 22px !important;
+  font-size: 12px !important; line-height: 19px !important;
   color: rgba(255, 255, 255, 0.7) !important;
 }
 .lunio-ccf-social-arrow {
@@ -525,12 +525,12 @@ a.lunio-ccf-btn-cta:hover,
 button.lunio-ccf-restart,
 .lunio-ccf-wrapper button.lunio-ccf-restart {
   display: block !important;
-  margin: 24px auto 0 !important;
+  margin: 18px auto 0 !important;
   background: none !important; background-color: transparent !important;
   border: none !important;
   color: rgba(255, 255, 255, 0.5) !important;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif !important;
-  font-size: 14px !important;
+  font-size: 13px !important;
   cursor: pointer;
   text-decoration: underline !important;
   text-underline-offset: 4px;
@@ -542,9 +542,9 @@ button.lunio-ccf-restart,
 
 .lunio-ccf-disclaimer {
   font-family: var(--lunio-ccf-font-body) !important;
-  font-size: 11px !important; line-height: 18px !important;
+  font-size: 10px !important; line-height: 16px !important;
   color: rgba(255, 255, 255, 0.35) !important;
-  margin-top: 24px; text-align: center !important;
+  margin-top: 18px; text-align: center !important;
 }
 
 @media (max-width: 700px) {
@@ -566,14 +566,14 @@ button.lunio-ccf-restart,
   .lunio-ccf-question { font-size: 19px !important; margin-bottom: 12px; }
   .lunio-ccf-platform-grid { grid-template-columns: repeat(2, 1fr); }
   .lunio-ccf-industry-grid { grid-template-columns: repeat(4, 1fr); }
-  .lunio-ccf-hero-number { font-size: 44px !important; }
-  .lunio-ccf-hero-text { font-size: 16px !important; line-height: 26px !important; }
-  .lunio-ccf-secondary-stats { grid-template-columns: 1fr; gap: 16px; }
-  .lunio-ccf-stat-value { font-size: 24px !important; }
-  .lunio-ccf-cta-block { padding: 28px 22px; }
-  .lunio-ccf-cta-headline { font-size: 24px !important; }
-  .lunio-ccf-checklist { flex-direction: column; gap: 12px; }
-  .lunio-ccf-cta-actions { gap: 16px; }
+  .lunio-ccf-hero-number { font-size: 38px !important; }
+  .lunio-ccf-hero-text { font-size: 14px !important; line-height: 22px !important; }
+  .lunio-ccf-secondary-stats { grid-template-columns: 1fr; gap: 12px; margin-bottom: 22px; padding-top: 18px; }
+  .lunio-ccf-stat-value { font-size: 20px !important; }
+  .lunio-ccf-cta-block { padding: 22px 18px; }
+  .lunio-ccf-cta-headline { font-size: 21px !important; }
+  .lunio-ccf-checklist { flex-direction: column; gap: 9px; margin-bottom: 16px; padding-bottom: 16px; }
+  .lunio-ccf-cta-actions { gap: 12px; }
   .lunio-ccf-btn-cta { width: 100% !important; justify-content: center !important; }
   .lunio-ccf-reassurance-list { width: 100%; justify-content: flex-start; gap: 8px 18px; }
   .lunio-ccf-nav { flex-direction: column-reverse !important; gap: 8px; }
